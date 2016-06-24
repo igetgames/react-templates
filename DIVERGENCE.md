@@ -8,3 +8,5 @@ Based off of this [pull request](nippur72/react-templates#5), and I also updated
 
 I changed the Travis CI badge in README.md to point to my fork, to better test changes not present in upstream.
 I also added this document to note all of my changes.
+
+* [[PR]](igetgames/react-templates#4) Cherry-pick [this commit](nippur72/react-templates@696144b707fc530b1fc3e5baf4bcac1f2d9f577b) to nest functions generatd by `rt-scope` into the template render function.
