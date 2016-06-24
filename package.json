@@ -62,8 +62,8 @@
     "grunt-tape": "0.0.2",
     "istanbul": "^0.4.3",
     "json-loader": "^0.5.4",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "react-native": "^0.23.1",
     "tape": "^4.5.1",
     "webpack": "^1.13.0"
