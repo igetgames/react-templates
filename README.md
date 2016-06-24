@@ -2,6 +2,9 @@
 [![build status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
+NOTE :warning: | This is a fork of the original (upstream) [react-templates](https://github.com/wix/react-templates) repository with additional changes and PRs merged. Please see the file [DIVERGENCE.md](DIVERGENCE.md) for a list of the changes from upstream.
+---------------|-
+
 # React Templates
 
 Lightweight templates for [React](http://facebook.github.io/react/index.html).
@@ -632,8 +635,8 @@ Copyright (c) 2015 Wix. Licensed under the MIT license.
 
 [npm-image]: https://img.shields.io/npm/v/react-templates.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/react-templates
-[travis-image]: https://img.shields.io/travis/wix/react-templates/gh-pages.svg?style=flat-square
-[travis-url]: https://travis-ci.org/wix/react-templates
+[travis-image]: https://img.shields.io/travis/igetgames/react-templates/gh-pages.svg?style=flat-square
+[travis-url]: https://travis-ci.org/igetgames/react-templates
 [coveralls-image]: https://img.shields.io/coveralls/wix/react-templates/gh-pages.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/wix/react-templates?branch=gh-pages
 [downloads-image]: http://img.shields.io/npm/dm/react-templates.svg?style=flat-square
