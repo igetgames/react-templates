@@ -2,6 +2,9 @@
 [![build status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
+NOTE :warning: | This is a fork of the original (upstream) [react-templates](https://github.com/wix/react-templates) repository with additional changes and PRs merged. Please see the file [DIVERGENCE.md](DIVERGENCE.md) for a list of the changes from upstream.
+---------------|-
+
 # React Templates
 
 Lightweight templates for [React](http://facebook.github.io/react/index.html).
