@@ -10,3 +10,5 @@ I changed the Travis CI badge in README.md to point to my fork, to better test c
 I also added this document to note all of my changes.
 
 * [[PR]](igetgames/react-templates#5) Cherry-pick [this commit](nippur72/react-templates@696144b707fc530b1fc3e5baf4bcac1f2d9f577b) to nest functions generatd by `rt-scope` into the template render function.
+
+* [[PR](https://github.com/igetgames/react-templates/pull/9) Cherry-pick nippur72/react-templates@b1b29c2cf088a94be6e22cbc6557b3b3263d28ba to fix wix/react-templates#162.
