@@ -78,7 +78,7 @@ module.exports = {
             }
         });
 
-        test('convert comment with AMD and ES6 modules', t => {
+        test('convert comment with ES6 modules', t => {
             const files = [
                 {source: 'comment.rt', expected: 'comment.rt.es6.js', options: {modules: 'es6'}}
             ];
