@@ -14,3 +14,5 @@ I also added this document to note all of my changes.
 * [[PR]](https://github.com/igetgames/react-templates/pull/9) Cherry-pick [this commit](https://github.com/nippur72/react-templates/commit/b1b29c2cf088a94be6e22cbc6557b3b3263d28ba) to fix [wix/react-templates#162](https://github.com/wix/react-templates/issues/162).
 
 * [[PR]](https://github.com/igetgames/react-templates/pull/10) Cherry-pick [nippur72/react-templates@3b288f0](https://github.com/nippur72/react-templates/commit/3b288f0bc6151a553a9542f438145534c1085ff5) and [nippur72/react-templates@40b46a9](https://github.com/nippur72/react-templates/commit/40b46a9ceecc93dd9e62be0b2e42a0460bba385c) while removing comment sanitization tests that will come in a later PR.
+
+* [[PR]](https://github.com/igetgames/react-templates/pull/11) Cherry-pick [nippur72/react-templates@8955efa](https://github.com/nippur72/react-templates/commit/8955efad9207c00f929038640ef0d83bad4e2207) and restore the tests removed in PR 10 to fix [wix/react-templates#158](https://github.com/wix/react-templates/issues/158).
