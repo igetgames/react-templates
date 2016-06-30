@@ -117,9 +117,9 @@ $ rt <filename> [<filename> ...] [<args>]`,
         default: reactNativeSupport.default,
         description: `'React native version to generate code for (${Object.keys(reactNativeSupport).join(', ')})'`
     }, {
-        option: 'normalize-whitespace',        
+        option: 'normalize-html-whitespace',
         type: 'Boolean',
         default: 'false',
-        description: 'Remove repeated whitespaces from HTML text'
+        description: 'Remove repeating whitespace from HTML text.'
     }]
 });

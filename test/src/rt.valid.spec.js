@@ -97,7 +97,7 @@ module.exports = {
 
         test('normalize whitespace', t => {
             const files = [
-                {source: 'whitespace.rt', expected: 'whitespace.rt.js', options: {normalizeWhitespace: true}}                
+                {source: 'whitespace.rt', expected: 'whitespace.rt.js', options: {normalizeHtmlWhitespace: true}}
             ];
             t.plan(files.length);
             files.forEach(check);

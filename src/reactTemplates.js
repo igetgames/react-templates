@@ -408,10 +408,10 @@ function convertHtmlToReact(node, context, parentNode) {
     } else if (node.type === 'text') {
         let text = node.data;
         if (parentNode !== undefined) {
-            const preseveWhitespaces = parentNode.name === 'pre' || parentNode.name === 'textarea' || _.has(parentNode.attribs, preAttr); 
-            if (context.options.normalizeWhitespace && !preseveWhitespaces) {
-                text = normalizeHtmlWhitespace(text);                
-            } 
+            const preserveWhitespaces = parentNode.name === 'pre' || parentNode.name === 'textarea' || _.has(parentNode.attribs, preAttr);
+            if (context.options.normalizeHtmlWhitespace && !preserveWhitespaces) {
+                text = normalizeHtmlWhitespace(text);
+            }
         }
         return text.trim() ? utils.convertText(node, context, text) : '';
     }
