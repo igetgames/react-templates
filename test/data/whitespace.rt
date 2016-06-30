@@ -1,0 +1,22 @@
+<div>
+    <div>
+        This   is  a      
+        {this.props.name}  
+        example
+    </div>
+    <pre>
+        This   is  a   
+        {this.props.name}  
+        example
+    </pre>
+    <textarea>
+        This   is  a   
+        {this.props.name}  
+        example
+    <textarea>
+    <div rt-pre>
+        This   is  a   
+        {this.props.name}  
+        example
+    </pre>
+</div>

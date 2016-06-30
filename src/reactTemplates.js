@@ -3,6 +3,7 @@ const cheerio = require('cheerio');
 const _ = require('lodash');
 const esprima = require('esprima');
 const escodegen = require('escodegen');
+const normalizeHtmlWhitespace = require('normalize-html-whitespace');
 const reactDOMSupport = require('./reactDOMSupport');
 const reactNativeSupport = require('./reactNativeSupport');
 const reactPropTemplates = require('./reactPropTemplates');
@@ -55,6 +56,7 @@ const includeSrcAttr = 'src';
 const requireAttr = 'rt-require';
 const importAttr = 'rt-import';
 const statelessAttr = 'rt-stateless';
+const preAttr = 'rt-pre';
 
 const reactTemplatesSelfClosingTags = [includeNode];
 
@@ -283,6 +285,7 @@ function hasNonSimpleChildren(node) {
 /**
  * @param node
  * @param {Context} context
+ * @param parentNode
  * @return {string}
  */
 function convertHtmlToReact(node, context) {
@@ -403,7 +406,15 @@ function convertHtmlToReact(node, context) {
         const sanitizedComment = node.data.split('*/').join('* /');
         return commentTemplate({data: sanitizedComment});
     } else if (node.type === 'text') {
-        return node.data.trim() ? utils.convertText(node, context, node.data) : '';
+        let text = node.data;
+        const parentNode = node.parent;
+        if (parentNode !== undefined) {
+            const preserveWhitespaces = parentNode.name === 'pre' || parentNode.name === 'textarea' || _.has(parentNode.attribs, preAttr);
+            if (context.options.normalizeHtmlWhitespace && !preserveWhitespaces) {
+                text = normalizeHtmlWhitespace(text);
+            }
+        }
+        return text.trim() ? utils.convertText(node, context, text) : '';
     }
 }
 
