@@ -225,7 +225,7 @@ function handleStyleProp(val, node, context) {
         .filter(i => _.includes(i, ':'))
         .map(i => {
             const pair = i.split(':');
-
+            const key = pair[0].trim();
             const value = pair.slice(1).join(':').trim();
             const parsedKey = /(^-moz-)|(^-o-)|(^-webkit-)/ig.test(key) ? _.upperFirst(_.camelCase(key)) : _.camelCase(key);
             return parsedKey + ' : ' + utils.convertText(node, context, value.trim());
