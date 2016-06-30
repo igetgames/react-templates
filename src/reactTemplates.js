@@ -288,7 +288,7 @@ function hasNonSimpleChildren(node) {
  * @param parentNode
  * @return {string}
  */
-function convertHtmlToReact(node, context, parentNode) {
+function convertHtmlToReact(node, context) {
     if (node.type === 'tag' || node.type === 'style') {
         context = _.defaults({
             boundParams: _.clone(context.boundParams)
@@ -372,7 +372,7 @@ function convertHtmlToReact(node, context, parentNode) {
         }
 
         const children = _.map(node.children, child => {
-            const code = convertHtmlToReact(child, context, node);
+            const code = convertHtmlToReact(child, context);
             validateJS(code, child, context);
             return code;
         });
@@ -407,6 +407,7 @@ function convertHtmlToReact(node, context, parentNode) {
         return commentTemplate({data: sanitizedComment});
     } else if (node.type === 'text') {
         let text = node.data;
+        const parentNode = node.parent;
         if (parentNode !== undefined) {
             const preserveWhitespaces = parentNode.name === 'pre' || parentNode.name === 'textarea' || _.has(parentNode.attribs, preAttr);
             if (context.options.normalizeHtmlWhitespace && !preserveWhitespaces) {
