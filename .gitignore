@@ -12,6 +12,7 @@ node_modules
 npm-debug.log
 .idea
 *.iml
+.vscode/
 
 ### bower ###
 /bower_components/*
