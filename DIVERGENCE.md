@@ -21,3 +21,5 @@ I also added this document to note all of my changes.
 
 * [[PR]](https://github.com/igetgames/react-templates/pull/13) Cherry-pick [nippur72/react-templates@86abe5f](https://github.com/nippur72/react-templates/commit/86abe5fb899b7a296e5f60dd1a949762a86e0107) to satisfy [wix/react-templates#146](https://github.com/wix/react-templates/issues/146).
   Rename the option from `normalize-whitespace` to `normalize-html-whitespace`.
+
+* [[PR]](https://github.com/igetgames/react-templates/pull/15) Integrate [my fix](https://github.com/wix/react-templates/issues/164) for [wix/react-templates#163](https://github.com/wix/react-templates/issues/163).
