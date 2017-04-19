@@ -69,6 +69,10 @@
     "tape": "^4.5.1",
     "webpack": "^1.13.0"
   },
+  "peerDependencies": {
+    "react": ">=0.14.2",
+    "react-dom": ">=0.14.2"
+  },
   "keywords": [
     "templates",
     "react-templates",
